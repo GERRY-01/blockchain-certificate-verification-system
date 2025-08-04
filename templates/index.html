@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Certificate</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-sans min-h-screen flex items-center justify-center p-6">
+
+  <div class="bg-darkblue bg-opacity-80 rounded-xl shadow-lg p-10 w-full max-w-xl border border-blue-800">
+    <h2 class="text-2xl font-bold text-center text-blue-400 mb-6">Institution Certificate Upload</h2>
+    
+    <form id="uploadForm" class="space-y-5">
+      <!-- Student Name -->
+      <div>
+        <label class="block text-sm mb-1" for="studentName">Student Name</label>
+        <input id="studentName" type="text" placeholder="John Doe" required
+               class="w-full px-4 py-2 rounded bg-gray-900 text-white border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Course Name -->
+      <div>
+        <label class="block text-sm mb-1" for="courseName">Course</label>
+        <input id="courseName" type="text" placeholder="Blockchain Basics" required
+               class="w-full px-4 py-2 rounded bg-gray-900 text-white border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Issue Date -->
+      <div>
+        <label class="block text-sm mb-1" for="issueDate">Issue Date</label>
+        <input id="issueDate" type="date" required
+               class="w-full px-4 py-2 rounded bg-gray-900 text-white border border-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <!-- Upload Certificate -->
+      <div>
+        <label class="block text-sm mb-1" for="pdfFile">Upload PDF Certificate</label>
+        <input id="pdfFile" type="file" accept="application/pdf" required
+               class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-blue-700 focus:outline-none" />
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit"
+              class="w-full bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 rounded transition duration-300">
+        Upload & Register on Blockchain
+      </button>
+    </form>
+  </div>
+
+  <style>
+    .bg-darkblue {
+      background-color: #0b1e40;
+    }
+  </style>
+
+</body>
+</html>
